@@ -1,4 +1,4 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
     return new Promise((resolve, reject) => {
         // Simulating an asynchronous operation
         setTimeout(() => {
@@ -6,5 +6,3 @@ function getResponseFromAPI() {
         }, 1000);
     });
 }
-
-export default getResponseFromAPI;
