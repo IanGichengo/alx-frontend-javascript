@@ -1,4 +1,4 @@
-class Building {
+export default class Building {
   constructor(sqft) {
     if (new.target === Building) {
       throw new Error("Cannot instantiate abstract class Building");
@@ -13,4 +13,3 @@ class Building {
     return this._sqft;
   }
 }
-export default Building;
