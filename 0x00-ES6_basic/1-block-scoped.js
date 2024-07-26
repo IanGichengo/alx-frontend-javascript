@@ -1,11 +1,11 @@
 /* modified so that vars aren't overwritten */
 export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
+  let task = false;
+  let task2 = true;
 
   if (trueOrFalse) {
-    const task = true;
-    const task2 = false;
+    const taskInBlock = true;
+    const task2InBlock = false;
   }
 
   return [task, task2];
